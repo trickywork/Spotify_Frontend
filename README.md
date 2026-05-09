@@ -6,8 +6,8 @@ Static frontend for the Spotify-style portfolio project. It calls the Ktor backe
 
 - Portfolio URL: `https://spotify.junliu.dev`
 - Cloud Run service: `spotify`
-- Cloud Run URL: `https://spotify-888561484971.us-central1.run.app`
-- Backend API: `https://spotify-api-888561484971.us-central1.run.app`
+- Cloud Run URL: `https://spotify-gb7rmueyna-uc.a.run.app`
+- Backend API: `https://spotify-api-gb7rmueyna-uc.a.run.app`
 - Google Cloud project: `caramel-vim-441513-e1`
 - Region: `us-central1`
 
@@ -94,7 +94,7 @@ window.SPOTIFY_API_BASE_URL = "http://localhost:8083";
 Cloud Run runtime variable:
 
 ```env
-API_BASE_URL=https://spotify-api-888561484971.us-central1.run.app
+API_BASE_URL=https://spotify-api-gb7rmueyna-uc.a.run.app
 ```
 
 The Docker entrypoint writes the runtime value into `config.js` when the container starts.
@@ -125,7 +125,7 @@ Manual deployment:
 ```bash
 gcloud builds submit \
   --config cloudbuild.yaml \
-  --substitutions _API_BASE_URL=https://spotify-api-888561484971.us-central1.run.app \
+  --substitutions _API_BASE_URL=https://spotify-api-gb7rmueyna-uc.a.run.app \
   --project caramel-vim-441513-e1
 ```
 
