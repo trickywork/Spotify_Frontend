@@ -1,6 +1,6 @@
 # Spotify Frontend
 
-Static web frontend for the LaiOffer Spotify project. It calls the Ktor backend from `Spotify_Backend` and provides a deployable portfolio demo with playlist browsing, track selection, and simulated playback controls.
+Static web frontend for the Spotify portfolio project. It calls the Ktor backend from `Spotify_Backend` and provides a deployable portfolio demo with playlist browsing, track selection, and simulated playback controls.
 
 ## Features
 
