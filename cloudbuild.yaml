@@ -6,7 +6,7 @@ steps:
     args:
       - build
       - -t
-      - us-central1-docker.pkg.dev/$PROJECT_ID/portfolio-repo/spotify:$COMMIT_SHA
+      - us-central1-docker.pkg.dev/$PROJECT_ID/portfolio-repo/spotify:$BUILD_ID
       - -t
       - us-central1-docker.pkg.dev/$PROJECT_ID/portfolio-repo/spotify:latest
       - .
@@ -14,7 +14,7 @@ steps:
   - name: gcr.io/cloud-builders/docker
     args:
       - push
-      - us-central1-docker.pkg.dev/$PROJECT_ID/portfolio-repo/spotify:$COMMIT_SHA
+      - us-central1-docker.pkg.dev/$PROJECT_ID/portfolio-repo/spotify:$BUILD_ID
 
   - name: gcr.io/cloud-builders/docker
     args:
@@ -28,7 +28,7 @@ steps:
       - deploy
       - spotify
       - --image
-      - us-central1-docker.pkg.dev/$PROJECT_ID/portfolio-repo/spotify:$COMMIT_SHA
+      - us-central1-docker.pkg.dev/$PROJECT_ID/portfolio-repo/spotify:$BUILD_ID
       - --region
       - us-central1
       - --platform
@@ -48,7 +48,7 @@ steps:
       - app=spotify,portfolio=junliu
 
 images:
-  - us-central1-docker.pkg.dev/$PROJECT_ID/portfolio-repo/spotify:$COMMIT_SHA
+  - us-central1-docker.pkg.dev/$PROJECT_ID/portfolio-repo/spotify:$BUILD_ID
   - us-central1-docker.pkg.dev/$PROJECT_ID/portfolio-repo/spotify:latest
 
 options:
