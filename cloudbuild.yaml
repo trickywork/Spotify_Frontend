@@ -1,5 +1,5 @@
 substitutions:
-  _API_BASE_URL: "http://localhost:8080"
+  _API_BASE_URL: "https://spotify-api-gb7rmueyna-uc.a.run.app"
 
 steps:
   - name: gcr.io/cloud-builders/docker

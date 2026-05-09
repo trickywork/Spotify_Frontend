@@ -42,7 +42,7 @@ window.SPOTIFY_API_BASE_URL = "http://localhost:8080";
 Cloud Run runtime env:
 
 ```text
-API_BASE_URL=https://spotify-api-...a.run.app
+API_BASE_URL=https://spotify-api-gb7rmueyna-uc.a.run.app
 ```
 
 The Docker entrypoint writes that value into `config.js` before nginx starts.
@@ -56,7 +56,7 @@ Manual deploy:
 ```bash
 gcloud builds submit \
   --config cloudbuild.yaml \
-  --substitutions _API_BASE_URL=https://spotify-api-...a.run.app \
+  --substitutions _API_BASE_URL=https://spotify-api-gb7rmueyna-uc.a.run.app \
   --project caramel-vim-441513-e1
 ```
 
