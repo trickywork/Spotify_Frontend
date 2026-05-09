@@ -47,6 +47,8 @@ API_BASE_URL=https://spotify-api-gb7rmueyna-uc.a.run.app
 
 The Docker entrypoint writes that value into `config.js` before nginx starts.
 
+Non-code setup is documented in `docs/configuration.md`, including local API pairing, runtime `API_BASE_URL`, custom domain, and pending Cloud Build trigger setup.
+
 ## Cloud Run Deployment
 
 The repo includes `Dockerfile` and `cloudbuild.yaml`.
