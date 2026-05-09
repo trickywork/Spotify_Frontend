@@ -15,7 +15,7 @@ Start the backend:
 
 ```bash
 cd /Users/junliu/git_repo/Spotify_Backend
-./gradlew run
+PORT=8083 ./gradlew run
 ```
 
 Serve the frontend:
@@ -36,7 +36,7 @@ http://localhost:5173
 Local default:
 
 ```javascript
-window.SPOTIFY_API_BASE_URL = "http://localhost:8080";
+window.SPOTIFY_API_BASE_URL = "http://localhost:8083";
 ```
 
 Cloud Run runtime env:

@@ -19,17 +19,17 @@ config.js
 Local default:
 
 ```javascript
-window.SPOTIFY_API_BASE_URL = window.SPOTIFY_API_BASE_URL || "http://localhost:8080";
+window.SPOTIFY_API_BASE_URL = window.SPOTIFY_API_BASE_URL || "http://localhost:8083";
 ```
 
 Local startup order:
 
-1. Start `Spotify_Backend` on `http://localhost:8080`.
+1. Start `Spotify_Backend` on `http://localhost:8083`.
 2. Serve this frontend on `http://localhost:5173`.
 
 ```bash
 cd /Users/junliu/git_repo/Spotify_Backend
-./gradlew run
+PORT=8083 ./gradlew run
 ```
 
 ```bash
