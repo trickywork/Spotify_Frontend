@@ -28,12 +28,12 @@ Local startup order:
 2. Serve this frontend on `http://localhost:5173`.
 
 ```bash
-cd /Users/junliu/git_repo/Spotify_Backend
+cd Spotify_Backend
 PORT=8083 ./gradlew run
 ```
 
 ```bash
-cd /Users/junliu/git_repo/Spotify_Frontend
+cd Spotify_Frontend
 python3 -m http.server 5173
 ```
 

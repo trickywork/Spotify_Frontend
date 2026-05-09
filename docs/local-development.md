@@ -3,14 +3,14 @@
 Run the backend first:
 
 ```bash
-cd /Users/junliu/git_repo/Spotify_Backend
+cd Spotify_Backend
 PORT=8083 ./gradlew run
 ```
 
 Serve the frontend with any static file server:
 
 ```bash
-cd /Users/junliu/git_repo/Spotify_Frontend
+cd Spotify_Frontend
 python3 -m http.server 5173
 ```
 

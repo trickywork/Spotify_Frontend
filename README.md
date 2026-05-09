@@ -1,5 +1,7 @@
 # Spotify Frontend
 
+[![CI](https://github.com/trickywork/Spotify_Frontend/actions/workflows/ci.yml/badge.svg)](https://github.com/trickywork/Spotify_Frontend/actions/workflows/ci.yml)
+
 Static frontend for the Spotify-style portfolio project. It calls the Ktor backend from `Spotify_Backend` and demonstrates playlist browsing, track selection, and simulated playback controls.
 
 ## Live Demo
@@ -60,14 +62,14 @@ Audio files are not bundled. The player demonstrates UI behavior and state trans
 Start the backend:
 
 ```bash
-cd /Users/junliu/git_repo/Spotify_Backend
+cd Spotify_Backend
 PORT=8083 ./gradlew run
 ```
 
 Serve the frontend:
 
 ```bash
-cd /Users/junliu/git_repo/Spotify_Frontend
+cd Spotify_Frontend
 python3 -m http.server 5173
 ```
 
@@ -104,7 +106,6 @@ The Docker entrypoint writes the runtime value into `config.js` when the contain
 Backend repo:
 
 ```text
-/Users/junliu/git_repo/Spotify_Backend
 https://github.com/trickywork/Spotify_Backend
 ```
 
