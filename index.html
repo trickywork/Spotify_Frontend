@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spotify Project</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <aside class="sidebar" aria-label="Playlists">
+        <div class="brand">
+          <span class="brand-mark"></span>
+          <span>Spotify Project</span>
+        </div>
+        <nav id="playlist-nav" class="playlist-nav"></nav>
+      </aside>
+
+      <section class="workspace">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">LaiOffer demo</p>
+            <h1 id="playlist-title">Loading playlists</h1>
+            <p id="playlist-description" class="description">Connecting to the Ktor backend.</p>
+          </div>
+          <button id="refresh" class="icon-button" type="button" title="Refresh playlists" aria-label="Refresh playlists">
+            <span class="refresh-icon"></span>
+          </button>
+        </header>
+
+        <section class="hero">
+          <div id="cover" class="cover cover-kotlin"></div>
+          <div class="now">
+            <p class="eyebrow">Now playing</p>
+            <h2 id="song-title">No song selected</h2>
+            <p id="song-artist" class="description">Choose a song from the list.</p>
+            <p id="song-lyric" class="lyric"></p>
+            <div class="progress-row">
+              <span id="elapsed">0:00</span>
+              <input id="progress" type="range" min="0" max="100" value="0" aria-label="Playback progress">
+              <span id="duration">0:00</span>
+            </div>
+            <div class="controls">
+              <button id="previous" type="button" class="round-button" title="Previous song" aria-label="Previous song">
+                <span class="previous-icon"></span>
+              </button>
+              <button id="play" type="button" class="play-button" title="Play or pause" aria-label="Play or pause">Play</button>
+              <button id="next" type="button" class="round-button" title="Next song" aria-label="Next song">
+                <span class="next-icon"></span>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-grid">
+          <div>
+            <div class="section-head">
+              <h2>Songs</h2>
+              <span id="song-count">0 tracks</span>
+            </div>
+            <div id="song-list" class="song-list"></div>
+          </div>
+
+          <div>
+            <div class="section-head">
+              <h2>Feed</h2>
+              <span id="api-status">Checking API</span>
+            </div>
+            <div id="feed" class="feed"></div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
